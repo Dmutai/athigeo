@@ -5,3 +5,12 @@ def hello_world():
     """Prints "Hello World!" to the console.
     """
     print("Hello World!")
+
+
+    def hello(name):
+        """Prints "Hello {name}!" to the console.
+
+        Args:
+        name (str): The name to print.
+        """
+        print(f"Hello{name}!") 
