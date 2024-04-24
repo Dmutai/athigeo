@@ -9,7 +9,7 @@
 
 
 -   Free software: MIT License
--   Documentation: https://Dmutai.github.io/athigeo
+-   Documentation: https://athigeo.xyz/
     
 
 ## Features
