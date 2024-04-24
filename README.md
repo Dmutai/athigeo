@@ -14,4 +14,7 @@
 
 ## Features
 
--   TODO
+-   visualize raster and vector data
+
+- Abktzubg raster and vector data
+- Print out useful mesege
