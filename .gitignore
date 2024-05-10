@@ -3,6 +3,14 @@ __pycache__/
 private/
 *.py[cod]
 *$py.class
+*.json
+*.shx
+*.shp
+*.prj
+*.geojson
+*.csv
+*.cpg
+*.dbf
 
 # C extensions
 *.so
