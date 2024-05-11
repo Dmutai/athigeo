@@ -78,9 +78,13 @@ nav:
     - Contributing: contributing.md
     - FAQ: faq.md
     - Changelog: changelog.md
-    - Report Issues: https://github.com/Dmutai/athigeo/issues
-    - Examples:
-        - examples/intro.ipynb
+    - Report Issues: https://github.com/Dmutai/athigeo/issues    
     - API Reference:
           - athigeo module: athigeo.md
           - common module: common.md
+          - utils module: utils.md
+    - Examples:
+          - examples/intro.ipynb
+          - examples/csv.ipynb
+         
+  
