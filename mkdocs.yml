@@ -55,7 +55,7 @@ plugins:
                   "*ignore.ipynb",
                   "raster.ipynb",
                   "vector.ipynb",
-                  "foliym.ipynb",                 
+                  "folium.ipynb",                 
               ]
           
 markdown_extensions:
@@ -89,7 +89,7 @@ nav:
         - examples/intro.ipynb
         - examples/csv.ipynb
         - examples/ipywidgets.ipynb
-        - examples/toolbars.ipynb
+        - examples/toolbar.ipynb
                 
     - API Reference:
           - athigeo module: athigeo.md
