@@ -50,7 +50,13 @@ plugins:
           execute: True
           allow_errors: false
           ignore: ["conf.py"]
-          execute_ignore: ["*ignore.ipynb"]
+          execute_ignore: 
+              [
+                  "*ignore.ipynb",
+                  "raster.ipynb",
+                  "vector.ipynb",
+                  "foliym.ipynb",                 
+              ]
           
 markdown_extensions:
     - admonition
@@ -82,6 +88,9 @@ nav:
     - Examples:
         - examples/intro.ipynb
         - examples/csv.ipynb
+        - examples/ipywidgets.ipynb
+        - examples/toolbars.ipynb
+                
     - API Reference:
           - athigeo module: athigeo.md
           - common module: common.md
