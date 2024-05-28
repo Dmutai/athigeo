@@ -90,6 +90,9 @@ nav:
         - examples/csv.ipynb
         - examples/ipywidgets.ipynb
         - examples/toolbar.ipynb
+        - examples/raster.ipynb
+        - examples/vector.ipynb
+        - examples/folium.ipynb
                 
     - API Reference:
           - athigeo module: athigeo.md
