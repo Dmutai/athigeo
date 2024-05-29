@@ -2,7 +2,7 @@
 
 __author__ = """Dennis Mutai"""
 __email__ = "dennis.mutaigeo@gmail.com"
-__version__ = "0.0.5"
+__version__ = "0.0.6"
 
 
 from .athigeo import Map
