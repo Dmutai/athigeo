@@ -131,6 +131,32 @@ class Map(ipyleaflet.Map):
         self.add(control)
         widgets.jslink((zoom_slider, "value"), (self, "zoom"))
 
+    def add_basemap_gui(self, basemaps=None, position="topright"):
+            """Adds a basemap GUI to the map.
+
+            Args:
+                position (str, optional): The position of the basemap GUI. Defaults to "topright".
+            """
+
+            basemap_selector = widgets.Dropdown(
+                options=[
+                    "OpenStreetMap",
+                    "OpenTopoMap",
+                    "Esri.WorldImagery",
+                    "Esri.NatGeoWorldMap",
+                ],
+                description="Basemap",
+            )
+
+            def update_basemap(change):
+                self.add_basemap(change["new"])
+
+            basemap_selector.observe(update_basemap, "value")
+
+            control = ipyleaflet.WidgetControl(widget=basemap_selector, position=position)
+            self.add(control)
+
+
     def add_toolbar(self, position="topright"):
         """_summary_
 
@@ -215,3 +241,17 @@ class Map(ipyleaflet.Map):
 
         with output:
             print("Toolbar is ready")
+
+    def add_beans(self, name="beans"):
+        """Add beans to the map.
+
+        Args:
+            name (str, optional): The name of the beans. Defaults to "beans".
+        """
+        beans = ipyleaflet.MarkerCluster(name=name)
+        self.add(beans)
+
+        for i in range(10):
+            marker = ipyleaflet.Marker(location=(i * 10, i * 10))
+            beans.markers = beans.markers + (marker,)    
+    
